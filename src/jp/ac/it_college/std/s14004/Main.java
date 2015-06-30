@@ -16,7 +16,6 @@ public class Main {
         });
 
         comm.start();
-        String name = "s14004:";
 
         while(true) {
             Scanner stdIn = new Scanner(System.in);
@@ -24,7 +23,7 @@ public class Main {
             String message = stdIn.next();
             if (message.equals("exit")) {
                 try {
-                    comm.send(name + "切断しました");
+                    comm.send("切断しました");
                     break;
 
                 } catch (IOException e) {
@@ -32,7 +31,7 @@ public class Main {
                 }
             }else {
                 try {
-                    comm.send(name + message);
+                    comm.send(message);
                 } catch (IOException var3) {
                     var3.printStackTrace();
                 }
