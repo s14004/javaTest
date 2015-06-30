@@ -1,7 +1,6 @@
 package jp.ac.it_college.std.s14004;
 
 import jp.ac.it_college.std.nakasone.lib.exam.Communicator;
-import jp.ac.it_college.std.nakasone.lib.exam.Communicator.InputListener;
 import java.io.IOException;
 import java.util.Scanner;
 
